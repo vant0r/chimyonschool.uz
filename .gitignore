@@ -1,33 +1,29 @@
-```
-# Database and environment files
-database.sql
+```gitignore
+# Database dump files
+*.sql
+
+# Environment files
 .env
 .env.local
-.env.*
+*.env.*
 
 # Dependencies
-vendor/
 node_modules/
-composer.lock
+vendor/
 
 # Logs and temp files
 *.log
 *.tmp
-*.temp
+*.swp
 
 # Editors
 .vscode/
 .idea/
-*.swp
-*.swo
 
 # OS generated files
 .DS_Store
 Thumbs.db
 
-# Build artifacts
-dist/
-build/
-target/
-*.out
+# PHP specific
+*.php~
 ```

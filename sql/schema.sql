@@ -117,6 +117,18 @@ VALUES
   ON DUPLICATE KEY UPDATE `id` = `id`;
 
 -- ---------------------------------------------------------------------
+-- 8) messages — aloqa formasi xabarlari
+-- ---------------------------------------------------------------------
+CREATE TABLE IF NOT EXISTS `messages` (
+  `id`        INT AUTO_INCREMENT PRIMARY KEY,
+  `ism`       VARCHAR(150) NOT NULL,
+  `aloqa`     VARCHAR(150) NOT NULL,
+  `xabar`     TEXT NOT NULL,
+  `oqilgan`   TINYINT(1) DEFAULT 0,
+  `sana`      TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- ---------------------------------------------------------------------
 -- Namuna ma'lumotlar (dastlabki ko'rinish uchun)
 -- ---------------------------------------------------------------------
 INSERT INTO `pages` (`slug`, `sarlavha`, `matn`, `seo_title`, `seo_description`) VALUES

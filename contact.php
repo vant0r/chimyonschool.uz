@@ -36,10 +36,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
+// Xarita uchun OpenStreetMap iframe URL (to'g'ri format)
 $lat = (float)($S['xarita_lat'] ?? 40.0333);
 $lng = (float)($S['xarita_lng'] ?? 71.7167);
-$d   = 0.01; // xarita ko'rinish maydoni
-$bbox = ($lng - $d) . '%2C' . ($lat - $d) . '%2C' . ($lng + $d) . '%2C' . ($lat + $d);
+// OSM embed URL: https://www.openstreetmap.org/export/embed.html?bbox=minx,miny,maxx,maxy&layer=mapnik&marker=lat,lng
+$d = 0.005; // Ko'rish maydoni kichikroq qilindi
+$minX = $lng - $d;
+$maxX = $lng + $d;
+$minY = $lat - $d;
+$maxY = $lat + $d;
+$mapUrl = "https://www.openstreetmap.org/export/embed.html?bbox={$minX},{$minY},{$maxX},{$maxY}&layer=mapnik&marker={$lat},{$lng}";
 
 $page_title = 'Aloqa';
 $page_desc  = 'Chimyon School bilan bog\'laning — manzil, telefon, email va onlayn xabar formasi.';
@@ -137,7 +143,7 @@ require __DIR__ . '/includes/header.php';
                 title="Chimyon School joylashuvi"
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=<?= e($lng) ?>%2C<?= e($lat) ?>%2C<?= e($lng) ?>%2C<?= e($lat) ?>&layer=mapnik&marker=<?= e($lat) ?>%2C<?= e($lng) ?>">
+                src="<?= e($mapUrl) ?>">
             </iframe>
         </div>
     </div>

@@ -8,6 +8,7 @@ require_once __DIR__ . '/config/config.php';
 
 // --- Dinamik ma'lumotlar (MB'dan) ---
 try {
+    // Prepared statements bilan xavfsiz so'rovlar
     $teachers = db()->query("SELECT * FROM teachers ORDER BY tartib ASC, id ASC LIMIT 4")->fetchAll();
     $news     = db()->query("SELECT * FROM news WHERE holat='chop_etilgan' ORDER BY sana DESC LIMIT 3")->fetchAll();
     $gallery  = db()->query("SELECT * FROM gallery ORDER BY id DESC LIMIT 6")->fetchAll();

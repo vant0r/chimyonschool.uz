@@ -97,23 +97,25 @@ CREATE TABLE IF NOT EXISTS `pages` (
 -- ---------------------------------------------------------------------
 CREATE TABLE IF NOT EXISTS `settings` (
   `id`         INT AUTO_INCREMENT PRIMARY KEY,
-  `telefon`    VARCHAR(50),
-  `email`      VARCHAR(100),
-  `manzil`     VARCHAR(255),
-  `ish_vaqti`  VARCHAR(150),
-  `telegram`   VARCHAR(255),
+  `site_name`  VARCHAR(255) DEFAULT 'Chimyon Maktabi',
+  `site_email` VARCHAR(100),
+  `site_phone` VARCHAR(50),
+  `site_address` VARCHAR(255),
+  `primary_color` VARCHAR(20) DEFAULT '#3498db',
+  `secondary_color` VARCHAR(20) DEFAULT '#2c3e50',
+  `footer_text` TEXT,
+  `facebook`   VARCHAR(255),
   `instagram`  VARCHAR(255),
-  `xarita_lat` VARCHAR(50),
-  `xarita_lng` VARCHAR(50)
+  `telegram`   VARCHAR(255)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Standart sozlamalar qatori
 INSERT INTO `settings`
-  (`id`, `telefon`, `email`, `manzil`, `ish_vaqti`, `telegram`, `instagram`, `xarita_lat`, `xarita_lng`)
+  (`id`, `site_name`, `site_email`, `site_phone`, `site_address`, `primary_color`, `secondary_color`, `footer_text`, `facebook`, `instagram`, `telegram`)
 VALUES
-  (1, '+998 90 123 45 67', 'info@chimyonschool.uz', 'Farg\'ona viloyati, Chimyon tumani',
-   'Dushanba–Shanba, 08:00–18:00', 'https://t.me/chimyonschool', 'https://instagram.com/chimyonschool',
-   '40.0333', '71.7167')
+  (1, 'Chimyon Maktabi', 'info@chimyonschool.uz', '+998 90 123 45 67', 'Farg''ona viloyati, Chimyon tumani',
+   '#3498db', '#2c3e50', '© 2024 Chimyon Maktabi. Barcha huquqlar himoyalangan.', 
+   '', 'https://instagram.com/chimyonschool', 'https://t.me/chimyonschool')
   ON DUPLICATE KEY UPDATE `id` = `id`;
 
 -- ---------------------------------------------------------------------

@@ -10,14 +10,14 @@
 
 // -------- Ma'lumotlar bazasi sozlamalari --------
 define('DB_HOST', 'localhost');
-define('DB_NAME', 'chimyonschool');
-define('DB_USER', 'root');        // hosting login'ingiz
-define('DB_PASS', '');            // hosting parolingiz
+define('DB_NAME', 'pvycpxdh_school');
+define('DB_USER', 'pvycpxdh_school');        // hosting login'ingiz
+define('DB_PASS', 'UNYnVVUTLu76TcNy3cF2');            // hosting parolingiz
 define('DB_CHARSET', 'utf8mb4');
 
 // -------- Sayt sozlamalari --------
 define('SITE_NAME', 'Chimyon School');
-define('SITE_URL', 'https://chimyonschool.uz');
+define('SITE_URL', 'https://webhub.x10.network');
 
 // Yuklangan fayllar joylashadigan papka (server ildizidan)
 define('UPLOAD_DIR', __DIR__ . '/../uploads/');

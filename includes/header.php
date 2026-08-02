@@ -21,6 +21,7 @@ $active   = $active ?? '';
 $menu = [
     'index'     => ['index.php', 'Bosh sahifa'],
     'about'     => ['about.php', 'Maktab haqida'],
+    'admission' => ['admission.php', 'Qabul'],
     'education' => ['education.php', 'Ta\'lim dasturi'],
     'teachers'  => ['teachers.php', 'O\'qituvchilar'],
     'gallery'   => ['gallery.php', 'Infratuzilma'],

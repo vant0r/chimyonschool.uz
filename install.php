@@ -34,7 +34,14 @@ try {
         if (preg_match('/^(CREATE\s+DATABASE|USE)\b/i', $stmt)) {
             continue;
         }
-        $pdo->exec($stmt);
+        try {
+            $pdo->exec($stmt);
+        } catch (PDOException $e) {
+            // Agar jadval allaqachon mavjud bo'lsa, davom etamiz
+            if (!str_contains($e->getMessage(), 'already exists')) {
+                throw $e;
+            }
+        }
     }
     $log[] = 'Jadvallar va namuna ma\'lumotlar muvaffaqiyatli yaratildi.';
 

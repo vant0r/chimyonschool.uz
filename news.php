@@ -13,6 +13,7 @@ $offset  = ($page - 1) * $perPage;
 try {
     $total = (int) db()->query("SELECT COUNT(*) FROM news WHERE holat='chop_etilgan'")->fetchColumn();
     $stmt  = db()->prepare("SELECT * FROM news WHERE holat='chop_etilgan' ORDER BY sana DESC LIMIT :lim OFFSET :off");
+    // PDO::PARAM_INT bilan bind qilish to'g'ri ishlatiladi
     $stmt->bindValue(':lim', $perPage, PDO::PARAM_INT);
     $stmt->bindValue(':off', $offset, PDO::PARAM_INT);
     $stmt->execute();

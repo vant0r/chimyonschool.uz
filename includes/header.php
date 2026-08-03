@@ -222,6 +222,8 @@ $menu = [
 </head>
 <body data-page="<?= e($active) ?>">
 
+    <!-- Skip to Content Link (Accessibility) -->
+    <a href="#main-content" class="skip-link">Asosiy kontentga o'tish</a>
 <!-- ======================= NAVIGATSIYA ======================= -->
 <nav class="nav" id="mainNav">
     <div class="container">

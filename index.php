@@ -24,6 +24,7 @@ $active     = 'index';
 
 require __DIR__ . '/includes/header.php';
 ?>
+<main id="main-content" role="main">
 
 <!-- ======================= HERO SECTION ======================= -->
 <section class="hero-section" style="position:relative;overflow:hidden;background:linear-gradient(135deg,var(--navy-900),var(--navy-700));min-height:100vh;display:flex;align-items:center;padding-top:var(--nav-h);">
@@ -237,5 +238,6 @@ require __DIR__ . '/includes/header.php';
         </div>
     </div>
 </section>
+</main>
 
 <?php require __DIR__ . '/includes/footer.php'; ?>

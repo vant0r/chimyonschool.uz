@@ -42,10 +42,13 @@ $menu = [
     <meta property="og:description" content="<?= e($desc) ?>">
     <meta property="og:type" content="website">
 
-    <!-- Google Fonts: Playfair Display (sarlavha) + Inter (matn) -->
+    <!-- Google Fonts: Inter (Primary) + Playfair Display (Accent) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Premium Design System -->
+    <link rel="stylesheet" href="<?= SITE_URL ?>assets/css/global.css">
 
     <!-- AOS.js — scroll-reveal animatsiyalar (CDN) -->
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">

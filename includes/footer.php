@@ -80,6 +80,7 @@ $S = get_settings();
 
 <!-- ======================= GLOBAL JS ======================= -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="<?= SITE_URL ?>assets/js/premium.js"></script>
 <script>
 (function(){
     'use strict';

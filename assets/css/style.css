@@ -1,28 +1,35 @@
 /* ============================================================
    CHIMYON SCHOOL — APPLE-INSPIRED PREMIUM DESIGN SYSTEM
    Philosophy: Minimalism, Perfect Spacing, Premium Feeling
+   Version: 2.0 - Complete Redesign
    ============================================================ */
 
 :root {
     /* Color System - Premium Green Palette */
     --primary: #408175;
     --primary-dark: #17433F;
+    --primary-light: #5A9A8A;
     --secondary: #558467;
     --accent: #A1BC98;
+    --accent-light: #C4D5B9;
     
     /* Backgrounds */
     --bg-primary: #FAFAFA;
     --bg-secondary: #F5F7F6;
+    --bg-tertiary: #EFEFEF;
     --bg-card: #FFFFFF;
+    --bg-glass: rgba(255, 255, 255, 0.85);
     
     /* Text Colors */
     --text-primary: #17433F;
     --text-secondary: #5A6B66;
     --text-tertiary: #8B9C96;
+    --text-inverse: #FFFFFF;
     
     /* Borders & Dividers */
     --border-light: rgba(64, 129, 117, 0.12);
     --border-medium: rgba(64, 129, 117, 0.2);
+    --border-strong: rgba(64, 129, 117, 0.35);
     
     /* Shadows - Apple Soft Shadows */
     --shadow-xs: 0 2px 8px rgba(23, 67, 63, 0.04);
@@ -30,12 +37,15 @@
     --shadow-md: 0 8px 32px rgba(23, 67, 63, 0.08);
     --shadow-lg: 0 12px 48px rgba(23, 67, 63, 0.1);
     --shadow-xl: 0 20px 80px rgba(23, 67, 63, 0.12);
+    --shadow-2xl: 0 30px 100px rgba(23, 67, 63, 0.15);
     
     /* Border Radius */
     --radius-btn: 16px;
     --radius-input: 18px;
     --radius-card: 24px;
     --radius-dialog: 28px;
+    --radius-sm: 12px;
+    --radius-md: 20px;
     
     /* Typography */
     --font-sans: 'SF Pro Display', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -49,6 +59,12 @@
     /* Transitions */
     --transition-smooth: cubic-bezier(0.2, 0.8, 0.2, 1);
     --transition-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+    --transition-spring: cubic-bezier(0.175, 0.885, 0.32, 1.1);
+    
+    /* Animation Durations */
+    --duration-fast: 0.15s;
+    --duration-normal: 0.3s;
+    --duration-slow: 0.5s;
 }
 
 /* Reset & Base */

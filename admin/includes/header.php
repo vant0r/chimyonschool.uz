@@ -1,37 +1,51 @@
+<?php
+/**
+ * =====================================================================
+ * CHIMYON SCHOOL — ADMIN HEADER
+ * Apple-Inspired Premium Design
+ * =====================================================================
+ */
+if (session_status() === PHP_SESSION_NONE) session_start();
+if (empty($_SESSION['admin_id'])) {
+    header('Location: login.php');
+    exit;
+}
+$active_page = basename($_SERVER['PHP_SELF'], '.php');
+?>
 <!DOCTYPE html>
 <html lang="uz">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Panel</title>
+    <title>Admin Panel - Chimyon School</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <style>
-        .admin-nav { background: #343a40; padding: 1rem 0; margin-bottom: 2rem; }
-        .admin-nav-container { max-width: 1200px; margin: 0 auto; padding: 0 1rem; display: flex; justify-content: space-between; align-items: center; }
-        .admin-nav-links { display: flex; gap: 1rem; flex-wrap: wrap; }
-        .admin-nav-links a { color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 4px; transition: background 0.3s; }
-        .admin-nav-links a:hover { background: rgba(255,255,255,0.1); }
-        .admin-nav-links a.active { background: #007bff; }
-        .logout-btn { background: #dc3545; }
+    <?php include __DIR__ . '/../../assets/css/admin-style.css'; ?>
     </style>
 </head>
 <body>
     <nav class="admin-nav">
         <div class="admin-nav-container">
+            <a href="dashboard.php" class="admin-logo">
+                <span class="admin-logo-mark">C</span>
+                <span>Chimyon Admin</span>
+            </a>
+            
             <div class="admin-nav-links">
-                <a href="dashboard.php">Dashboard</a>
-                <a href="news.php">Yangiliklar</a>
-                <a href="admissions.php">Qabul</a>
-                <a href="messages.php">Xabarlar</a>
-                <a href="teachers.php">O'qituvchilar</a>
-                <a href="gallery.php">Galereya</a>
-                <a href="settings.php">Sozlamalar</a>
+                <a href="dashboard.php" class="<?= $active_page === 'dashboard' ? 'active' : '' ?>">Dashboard</a>
+                <a href="news.php" class="<?= $active_page === 'news' || $active_page === 'news_create' || $active_page === 'news_edit' ? 'active' : '' ?>">Yangiliklar</a>
+                <a href="admissions.php" class="<?= $active_page === 'admissions' ? 'active' : '' ?>">Qabul</a>
+                <a href="messages.php" class="<?= $active_page === 'messages' ? 'active' : '' ?>">Xabarlar</a>
+                <a href="teachers.php" class="<?= $active_page === 'teachers' || $active_page === 'teacher_create' || $active_page === 'teacher_edit' ? 'active' : '' ?>">O'qituvchilar</a>
+                <a href="gallery.php" class="<?= $active_page === 'gallery' ? 'active' : '' ?>">Galereya</a>
+                <a href="settings.php" class="<?= $active_page === 'settings' ? 'active' : '' ?>">Sozlamalar</a>
             </div>
-            <div>
+            
+            <div class="admin-nav-actions">
                 <a href="../index.php" target="_blank">Saytni ko'rish</a>
                 <a href="logout.php" class="logout-btn">Chiqish</a>
             </div>
         </div>
     </nav>
-</body>
-</html>
+    
+    <main class="admin-content">

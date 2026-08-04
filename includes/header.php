@@ -37,7 +37,7 @@ $menu = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= e($title) ?></title>
     <meta name="description" content="<?= e($desc) ?>">
-    <meta name="theme-color" content="#0a1f44">
+    <meta name="theme-color" content="#408175">
     <meta property="og:title" content="<?= e($title) ?>">
     <meta property="og:description" content="<?= e($desc) ?>">
     <meta property="og:type" content="website">
@@ -58,13 +58,15 @@ $menu = [
        DIZAYN TIZIMI — Ranglar, tipografika, tokenlar
        ============================================================ */
     :root{
-        --navy-900:#061530;
-        --navy-800:#0a1f44;
-        --navy-700:#102a5c;
-        --navy-600:#1a3a73;
-        --gold-500:#d4af37;
-        --gold-400:#e6c765;
-        --gold-300:#f2dfa0;
+        /* Brand Colors - Teal/Green Palette */
+        --primary:#408175;
+        --primary-dark:#2f665c;
+        --primary-light:#55968a;
+        --dark:#17433F;
+        --secondary:#558467;
+        --accent:#A1BC98;
+        
+        /* Neutrals */
         --cream:#faf7f0;
         --white:#ffffff;
         --gray-50:#f7f8fa;
@@ -73,10 +75,12 @@ $menu = [
         --gray-500:#6b7688;
         --gray-700:#3a4355;
         --ink:#0d1526;
+        
+        /* Design Tokens */
         --radius:16px;
-        --shadow-sm:0 4px 14px rgba(10,31,68,.08);
-        --shadow-md:0 14px 40px rgba(10,31,68,.14);
-        --shadow-lg:0 30px 70px rgba(10,31,68,.22);
+        --shadow-sm:0 4px 14px rgba(64,129,117,.08);
+        --shadow-md:0 14px 40px rgba(64,129,117,.14);
+        --shadow-lg:0 30px 70px rgba(64,129,117,.22);
         --container:1200px;
         --nav-h:76px;
     }
@@ -99,16 +103,16 @@ $menu = [
     .container{width:100%;max-width:var(--container);margin:0 auto;padding:0 24px}
     .section{padding:96px 0}
     .center{text-align:center}
-    .text-gold{color:var(--gold-500)}
+    .text-gold{color:var(--primary);}
 
     /* ---- Bo'lim sarlavhalari ---- */
     .eyebrow{
         display:inline-flex;align-items:center;gap:8px;
         font-size:13px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
-        color:var(--gold-500);margin-bottom:16px;
+        color:var(--primary);margin-bottom:16px;
     }
-    .eyebrow::before{content:"";width:28px;height:2px;background:var(--gold-500);display:inline-block}
-    .section-title{font-size:clamp(28px,4vw,44px);color:var(--navy-800);margin-bottom:16px;text-wrap:balance}
+    .eyebrow::before{content:"";width:28px;height:2px;background:var(--primary);display:inline-block}
+    .section-title{font-size:clamp(28px,4vw,44px);color:var(--dark);margin-bottom:16px;text-wrap:balance}
     .section-sub{font-size:17px;color:var(--gray-500);max-width:620px;margin:0 auto;text-wrap:pretty}
 
     /* ---- Tugmalar ---- */
@@ -118,12 +122,12 @@ $menu = [
         cursor:pointer;border:none;position:relative;overflow:hidden;
         transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .3s;
     }
-    .btn-gold{background:var(--gold-500);color:var(--navy-900)}
-    .btn-gold:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 16px 34px rgba(212,175,55,.4)}
+    .btn-gold{background:var(--primary);color:white}
+    .btn-gold:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 16px 34px rgba(64,175,117,.4)}
     .btn-outline{background:transparent;color:var(--white);border:1.5px solid rgba(255,255,255,.5)}
-    .btn-outline:hover{background:var(--white);color:var(--navy-800);transform:translateY(-3px)}
-    .btn-navy{background:var(--navy-800);color:var(--white)}
-    .btn-navy:hover{background:var(--navy-700);transform:translateY(-3px);box-shadow:var(--shadow-md)}
+    .btn-outline:hover{background:var(--white);color:var(--dark);transform:translateY(-3px)}
+    .btn-navy{background:var(--dark);color:var(--white)}
+    .btn-navy:hover{background:var(--primary-dark);transform:translateY(-3px);box-shadow:var(--shadow-md)}
     /* Ripple effekt */
     .ripple{position:absolute;border-radius:50%;transform:scale(0);background:rgba(255,255,255,.5);animation:ripple .6s linear;pointer-events:none}
     @keyframes ripple{to{transform:scale(4);opacity:0}}
@@ -137,17 +141,17 @@ $menu = [
         transition:background .4s ease,box-shadow .4s ease,height .4s ease;
         background:transparent;
     }
-    .nav.scrolled{background:rgba(6,21,48,.96);box-shadow:0 8px 30px rgba(0,0,0,.25);backdrop-filter:blur(10px);height:66px}
+    .nav.scrolled{background:rgba(23,67,63,.96);box-shadow:0 8px 30px rgba(0,0,0,.25);backdrop-filter:blur(10px);height:66px}
     .nav .container{display:flex;align-items:center;justify-content:space-between}
     .logo{display:flex;align-items:center;gap:12px;color:#fff}
     .logo-mark{
         width:42px;height:42px;border-radius:11px;display:grid;place-items:center;
-        background:linear-gradient(135deg,var(--gold-500),var(--gold-300));
-        color:var(--navy-900);font-family:'Playfair Display',serif;font-weight:800;font-size:22px;
-        box-shadow:0 6px 18px rgba(212,175,55,.4);
+        background:linear-gradient(135deg,var(--primary),var(--primary-light));
+        color:white;font-family:'Playfair Display',serif;font-weight:800;font-size:22px;
+        box-shadow:0 6px 18px rgba(64,129,117,.4);
     }
     .logo-txt b{font-family:'Playfair Display',serif;font-size:19px;display:block;line-height:1}
-    .logo-txt span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-300);opacity:.9}
+    .logo-txt span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);opacity:.9}
 
     .menu{display:flex;align-items:center;gap:6px}
     .menu a{
@@ -156,7 +160,7 @@ $menu = [
     }
     .menu a::after{
         content:"";position:absolute;left:14px;right:14px;bottom:6px;height:2px;
-        background:var(--gold-500);transform:scaleX(0);transform-origin:left;transition:transform .3s;
+        background:var(--primary);transform:scaleX(0);transform-origin:left;transition:transform .3s;
     }
     .menu a:hover,.menu a.active{color:#fff}
     .menu a:hover::after,.menu a.active::after{transform:scaleX(1)}
@@ -171,13 +175,13 @@ $menu = [
     /* Mobil menyu (slide-in) */
     .mobile-menu{
         position:fixed;top:0;right:0;bottom:0;width:min(84vw,340px);z-index:1001;
-        background:var(--navy-900);padding:100px 28px 40px;
+        background:var(--dark);padding:100px 28px 40px;
         transform:translateX(100%);transition:transform .45s cubic-bezier(.2,.8,.2,1);
         box-shadow:-20px 0 60px rgba(0,0,0,.4);overflow-y:auto;
     }
     .mobile-menu.open{transform:translateX(0)}
     .mobile-menu a{display:block;color:rgba(255,255,255,.9);font-size:17px;font-weight:500;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.08)}
-    .mobile-menu a.active{color:var(--gold-500)}
+    .mobile-menu a.active{color:var(--primary)}
     .mobile-menu .btn{width:100%;margin-top:24px}
     .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1000;opacity:0;visibility:hidden;transition:.35s}
     .overlay.open{opacity:1;visibility:visible}
@@ -196,15 +200,15 @@ $menu = [
     /* Sarlavha sahifa banneri (bosh sahifadan tashqari) */
     .page-hero{
         position:relative;padding:calc(var(--nav-h) + 70px) 0 70px;
-        background:linear-gradient(135deg,var(--navy-900),var(--navy-700));
+        background:linear-gradient(135deg,var(--dark),var(--secondary));
         color:#fff;text-align:center;overflow:hidden;
     }
-    .page-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(212,175,55,.18),transparent 55%)}
+    .page-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 20%,rgba(64,129,117,.18),transparent 55%)}
     .page-hero .container{position:relative;z-index:2}
     .page-hero h1{font-size:clamp(30px,5vw,52px);margin-bottom:14px}
     .page-hero p{color:rgba(255,255,255,.8);max-width:600px;margin:0 auto;font-size:17px}
     .crumbs{margin-top:18px;font-size:14px;color:rgba(255,255,255,.65)}
-    .crumbs a{color:var(--gold-300)}
+    .crumbs a{color:var(--accent)}
 
     /* ============================================================
        RESPONSIVE

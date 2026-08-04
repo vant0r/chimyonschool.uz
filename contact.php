@@ -55,16 +55,16 @@ require __DIR__ . '/includes/header.php';
 <style>
 .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:52px;align-items:start}
 .info-card{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid var(--gray-100);border-radius:14px;padding:22px;box-shadow:var(--shadow-sm);margin-bottom:16px}
-.info-card .ico{flex:0 0 48px;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy-800),var(--navy-600));color:var(--gold-400)}
-.info-card h4{font-size:15px;color:var(--navy-800);margin-bottom:3px}
+.info-card .ico{flex:0 0 48px;width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,var(--dark),var(--secondary));color:var(--accent)}
+.info-card h4{font-size:15px;color:var(--dark);margin-bottom:3px}
 .info-card p,.info-card a{color:var(--gray-600);font-size:14.5px}
-.info-card a:hover{color:var(--gold-500)}
+.info-card a:hover{color:var(--primary)}
 .c-form{background:#fff;border-radius:var(--radius);padding:38px;box-shadow:var(--shadow-md);border:1px solid var(--gray-100)}
 .field{margin-bottom:20px}
-.field label{display:block;font-size:14px;font-weight:600;color:var(--navy-800);margin-bottom:8px}
+.field label{display:block;font-size:14px;font-weight:600;color:var(--dark);margin-bottom:8px}
 .field input,.field textarea{width:100%;padding:14px 16px;border:1.5px solid var(--gray-300);border-radius:12px;font-size:15px;font-family:'Inter';color:var(--ink);transition:.25s}
 .field textarea{resize:vertical;min-height:130px}
-.field input:focus,.field textarea:focus{outline:none;border-color:var(--gold-500);box-shadow:0 0 0 4px rgba(212,175,55,.15)}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px rgba(212,175,55,.15)}
 .c-form .btn{width:100%}
 .alert{padding:16px 18px;border-radius:12px;margin-bottom:22px;font-size:14.5px}
 .alert-ok{background:#e7f7ee;border:1px solid #b6e6c9;color:#1c7a44}

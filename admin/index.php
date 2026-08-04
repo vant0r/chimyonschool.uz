@@ -47,8 +47,8 @@ $page_title = 'Dashboard';
     <title><?= e($page_title) ?> — Chimyon School Admin</title>
     <style>
         :root{
-            --navy-900:#061530;--navy-800:#0a1f44;--navy-700:#102a5c;--navy-600:#1a3a73;
-            --gold-500:#d4af37;--gold-400:#e6c765;--gold-300:#f2dfa0;
+            --dark:#17433F;--secondary:#558467;
+            
             --gray-50:#f7f8fa;--gray-100:#eef1f5;--gray-300:#cbd2dc;--gray-500:#6b7688;--gray-700:#3a4355;
             --shadow-sm:0 4px 14px rgba(10,31,68,.08);--shadow-md:0 14px 40px rgba(10,31,68,.14);
             --radius:14px;
@@ -57,16 +57,16 @@ $page_title = 'Dashboard';
         body{font-family:'Inter',system-ui,sans-serif;background:var(--gray-50);color:var(--gray-700)}
         
         /* Sidebar */
-        .sidebar{position:fixed;left:0;top:0;bottom:0;width:260px;background:var(--navy-900);padding:24px 18px;z-index:100}
+        .sidebar{position:fixed;left:0;top:0;bottom:0;width:260px;background:var(--dark);padding:24px 18px;z-index:100}
         .logo{display:flex;align-items:center;gap:12px;padding:12px 14px;margin-bottom:28px}
-        .logo-mark{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold-500),var(--gold-300));color:var(--navy-900);font-family:'Playfair Display',serif;font-weight:800;font-size:22px}
+        .logo-mark{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),var(--accent));color:var(--dark);font-family:'Playfair Display',serif;font-weight:800;font-size:22px}
         .logo-txt b{font-family:'Playfair Display',serif;font-size:16px;color:#fff;display:block}
-        .logo-txt span{font-size:10px;color:var(--gold-300);letter-spacing:.2em;text-transform:uppercase}
+        .logo-txt span{font-size:10px;color:var(--accent);letter-spacing:.2em;text-transform:uppercase}
         
         .nav-menu a{display:flex;align-items:center;gap:12px;padding:12px 14px;color:rgba(255,255,255,.75);border-radius:10px;margin-bottom:6px;transition:.25s;font-size:14.5px}
         .nav-menu a:hover,.nav-menu a.active{background:rgba(255,255,255,.08);color:#fff}
         .nav-menu a svg{flex:0 0 18px}
-        .nav-menu .badge{margin-left:auto;background:var(--gold-500);color:var(--navy-900);font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px}
+        .nav-menu .badge{margin-left:auto;background:var(--primary);color:var(--dark);font-size:11px;font-weight:700;padding:2px 8px;border-radius:6px}
         
         .logout{position:absolute;bottom:24px;left:18px;right:18px}
         .logout a{display:flex;align-items:center;gap:10px;padding:12px 14px;color:#ff9a9a;border-radius:10px;transition:.25s}
@@ -75,20 +75,20 @@ $page_title = 'Dashboard';
         /* Main */
         .main{margin-left:260px;padding:32px}
         .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
-        .header h1{font-size:26px;color:var(--navy-800)}
+        .header h1{font-size:26px;color:var(--dark)}
         .user-info{display:flex;align-items:center;gap:12px}
-        .user-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--gold-500),var(--gold-300));display:grid;place-items:center;color:var(--navy-900);font-weight:700;font-family:'Playfair Display',serif}
+        .user-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--primary),var(--accent));display:grid;place-items:center;color:var(--dark);font-weight:700;font-family:'Playfair Display',serif}
         
         /* Stats */
         .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-bottom:32px}
         .stat-card{background:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm)}
-        .stat-card .ico{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--cream);color:var(--gold-500);margin-bottom:14px}
-        .stat-card .num{font-size:28px;font-weight:800;color:var(--navy-800)}
+        .stat-card .ico{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;background:var(--cream);color:var(--primary);margin-bottom:14px}
+        .stat-card .num{font-size:28px;font-weight:800;color:var(--dark)}
         .stat-card .lbl{font-size:13.5px;color:var(--gray-500)}
         
         /* Tables */
         .card{background:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm);margin-bottom:24px}
-        .card h3{font-size:18px;color:var(--navy-800);margin-bottom:18px}
+        .card h3{font-size:18px;color:var(--dark);margin-bottom:18px}
         table{width:100%;border-collapse:collapse}
         th,td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--gray-100);font-size:14px}
         th{color:var(--gray-500);font-weight:600;font-size:13px}

@@ -20,9 +20,9 @@ require __DIR__ . '/includes/header.php';
 ?>
 <style>
 .filters{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-bottom:44px}
-.filters button{background:#fff;border:1.5px solid var(--gray-300);color:var(--navy-700);font-size:14px;font-weight:600;padding:10px 20px;border-radius:50px;cursor:pointer;transition:.3s;text-transform:capitalize}
-.filters button:hover{border-color:var(--navy-800)}
-.filters button.active{background:var(--navy-800);color:#fff;border-color:var(--navy-800)}
+.filters button{background:#fff;border:1.5px solid var(--gray-300);color:var(--secondary);font-size:14px;font-weight:600;padding:10px 20px;border-radius:50px;cursor:pointer;transition:.3s;text-transform:capitalize}
+.filters button:hover{border-color:var(--dark)}
+.filters button.active{background:var(--dark);color:#fff;border-color:var(--dark)}
 .masonry{columns:3;column-gap:20px}
 .m-item{break-inside:avoid;margin-bottom:20px;position:relative;border-radius:14px;overflow:hidden;cursor:pointer;box-shadow:var(--shadow-sm)}
 .m-item img{width:100%;display:block;transition:transform .6s}
@@ -37,7 +37,7 @@ require __DIR__ . '/includes/header.php';
 .lb img{max-width:92vw;max-height:86vh;border-radius:12px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
 .lb .close{position:absolute;top:22px;right:26px;background:none;border:none;color:#fff;font-size:40px;cursor:pointer;line-height:1}
 .lb .nav{position:absolute;top:50%;transform:translateY(-50%);background:rgba(255,255,255,.1);border:none;color:#fff;width:54px;height:54px;border-radius:50%;font-size:26px;cursor:pointer;transition:.3s}
-.lb .nav:hover{background:var(--gold-500);color:var(--navy-900)}
+.lb .nav:hover{background:var(--primary);color:var(--dark)}
 .lb .prev{left:24px}.lb .next{right:24px}
 @media (max-width:900px){.masonry{columns:2}}
 @media (max-width:560px){.masonry{columns:1}}

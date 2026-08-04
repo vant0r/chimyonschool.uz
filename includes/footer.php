@@ -9,19 +9,19 @@ $S = get_settings();
 <!-- ======================= FOOTER ======================= -->
 <footer class="footer">
     <style>
-    .footer{background:var(--navy-900);color:rgba(255,255,255,.75);padding:72px 0 28px;position:relative;overflow:hidden}
-    .footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--gold-500),transparent)}
+    .footer{background:var(--dark);color:rgba(255,255,255,.75);padding:72px 0 28px;position:relative;overflow:hidden}
+    .footer::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,transparent,var(--primary),transparent)}
     .footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.3fr;gap:40px;margin-bottom:48px}
     .footer h4{color:#fff;font-size:18px;margin-bottom:20px}
     .footer .logo{margin-bottom:18px}
     .footer p{font-size:14.5px;line-height:1.7}
     .footer-links a{display:block;padding:7px 0;font-size:14.5px;transition:color .25s,padding-left .25s}
-    .footer-links a:hover{color:var(--gold-400);padding-left:6px}
+    .footer-links a:hover{color:var(--accent);padding-left:6px}
     .footer-contact li{display:flex;gap:12px;margin-bottom:14px;font-size:14.5px;align-items:flex-start}
-    .footer-contact svg{flex:0 0 18px;margin-top:3px;color:var(--gold-500)}
+    .footer-contact svg{flex:0 0 18px;margin-top:3px;color:var(--primary)}
     .socials{display:flex;gap:12px;margin-top:20px}
     .socials a{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:rgba(255,255,255,.08);transition:.3s}
-    .socials a:hover{background:var(--gold-500);color:var(--navy-900);transform:translateY(-4px)}
+    .socials a:hover{background:var(--primary);color:white;transform:translateY(-4px)}
     .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:24px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:13.5px;color:rgba(255,255,255,.55)}
     @media (max-width:900px){.footer-grid{grid-template-columns:1fr 1fr;gap:32px}}
     @media (max-width:560px){.footer-grid{grid-template-columns:1fr}.footer-bottom{flex-direction:column;text-align:center}}
@@ -80,6 +80,7 @@ $S = get_settings();
 
 <!-- ======================= GLOBAL JS ======================= -->
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="<?= SITE_URL ?>assets/js/premium.js"></script>
 <script>
 (function(){
     'use strict';

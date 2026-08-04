@@ -90,18 +90,18 @@ require __DIR__ . '/includes/header.php';
 <style>
 .adm-wrap{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:start}
 .adm-info .eyebrow{margin-bottom:14px}
-.adm-info h2{font-size:clamp(26px,3.5vw,38px);color:var(--navy-800);margin-bottom:16px}
+.adm-info h2{font-size:clamp(26px,3.5vw,38px);color:var(--dark);margin-bottom:16px}
 .adm-info p{color:var(--gray-700);margin-bottom:26px}
 .steps{margin-top:10px}
 .step{display:flex;gap:16px;margin-bottom:22px}
-.step .n{flex:0 0 42px;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--navy-800),var(--navy-600));color:var(--gold-400);display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:700}
-.step h4{font-size:16px;color:var(--navy-800);margin-bottom:2px}
+.step .n{flex:0 0 42px;width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--dark),var(--secondary));color:var(--accent);display:grid;place-items:center;font-family:'Playfair Display',serif;font-weight:700}
+.step h4{font-size:16px;color:var(--dark);margin-bottom:2px}
 .step p{font-size:14px;color:var(--gray-500);margin:0}
 .adm-form{background:#fff;border-radius:var(--radius);padding:38px;box-shadow:var(--shadow-md);border:1px solid var(--gray-100)}
 .field{margin-bottom:20px}
-.field label{display:block;font-size:14px;font-weight:600;color:var(--navy-800);margin-bottom:8px}
+.field label{display:block;font-size:14px;font-weight:600;color:var(--dark);margin-bottom:8px}
 .field input,.field select{width:100%;padding:14px 16px;border:1.5px solid var(--gray-300);border-radius:12px;font-size:15px;font-family:'Inter';color:var(--ink);transition:.25s;background:#fff}
-.field input:focus,.field select:focus{outline:none;border-color:var(--gold-500);box-shadow:0 0 0 4px rgba(212,175,55,.15)}
+.field input:focus,.field select:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 4px rgba(212,175,55,.15)}
 .field .file{padding:13px 16px;border:1.5px dashed var(--gray-300);border-radius:12px;font-size:14px;color:var(--gray-500);cursor:pointer;display:block}
 .field .hint{font-size:12.5px;color:var(--gray-500);margin-top:6px}
 .alert{padding:16px 18px;border-radius:12px;margin-bottom:22px;font-size:14.5px}

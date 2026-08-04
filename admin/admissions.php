@@ -95,19 +95,19 @@ $page_title = 'Arizalar';
     <title><?= e($page_title) ?> — Chimyon School Admin</title>
     <style>
         :root{
-            --navy-900:#061530;--navy-800:#0a1f44;--navy-700:#102a5c;--navy-600:#1a3a73;
-            --gold-500:#d4af37;--gold-400:#e6c765;--gold-300:#f2dfa0;
+            --dark:#17433F;--secondary:#558467;
+            
             --gray-50:#f7f8fa;--gray-100:#eef1f5;--gray-300:#cbd2dc;--gray-500:#6b7688;--gray-700:#3a4355;
             --shadow-sm:0 4px 14px rgba(10,31,68,.08);--radius:14px;
         }
         *{box-sizing:border-box;margin:0;padding:0}
         body{font-family:'Inter',system-ui,sans-serif;background:var(--gray-50);color:var(--gray-700)}
         
-        .sidebar{position:fixed;left:0;top:0;bottom:0;width:260px;background:var(--navy-900);padding:24px 18px;z-index:100}
+        .sidebar{position:fixed;left:0;top:0;bottom:0;width:260px;background:var(--dark);padding:24px 18px;z-index:100}
         .logo{display:flex;align-items:center;gap:12px;padding:12px 14px;margin-bottom:28px}
-        .logo-mark{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--gold-500),var(--gold-300));color:var(--navy-900);font-family:'Playfair Display',serif;font-weight:800;font-size:22px}
+        .logo-mark{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:linear-gradient(135deg,var(--primary),var(--accent));color:var(--dark);font-family:'Playfair Display',serif;font-weight:800;font-size:22px}
         .logo-txt b{font-family:'Playfair Display',serif;font-size:16px;color:#fff;display:block}
-        .logo-txt span{font-size:10px;color:var(--gold-300);letter-spacing:.2em;text-transform:uppercase}
+        .logo-txt span{font-size:10px;color:var(--accent);letter-spacing:.2em;text-transform:uppercase}
         
         .nav-menu a{display:flex;align-items:center;gap:12px;padding:12px 14px;color:rgba(255,255,255,.75);border-radius:10px;margin-bottom:6px;transition:.25s;font-size:14.5px}
         .nav-menu a:hover,.nav-menu a.active{background:rgba(255,255,255,.08);color:#fff}
@@ -117,7 +117,7 @@ $page_title = 'Arizalar';
         
         .main{margin-left:260px;padding:32px}
         .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:32px}
-        .header h1{font-size:26px;color:var(--navy-800)}
+        .header h1{font-size:26px;color:var(--dark)}
         
         .card{background:#fff;border-radius:var(--radius);padding:24px;box-shadow:var(--shadow-sm);margin-bottom:24px}
         .filters{display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap}
@@ -134,7 +134,7 @@ $page_title = 'Arizalar';
         .status-rad etilgan{background:#fee;border:#f5c2c2;color:#b02a2a}
         
         .btn{padding:6px 12px;border:none;border-radius:6px;cursor:pointer;font-size:13px;text-decoration:none;display:inline-block}
-        .btn-gold{background:var(--gold-500);color:var(--navy-900)}
+        .btn-gold{background:var(--primary);color:var(--dark)}
         .btn-danger{background:#dc3545;color:#fff}
         .form-inline{display:flex;gap:8px;align-items:center}
         .form-inline select{padding:6px 10px;border:1px solid var(--gray-300);border-radius:6px}
@@ -143,7 +143,7 @@ $page_title = 'Arizalar';
         
         .pagination{display:flex;gap:8px;justify-content:center;margin-top:20px}
         .pagination a{padding:8px 14px;border:1px solid var(--gray-300);border-radius:6px;color:var(--gray-700);text-decoration:none}
-        .pagination a.active{background:var(--gold-500);border-color:var(--gold-500);color:var(--navy-900)}
+        .pagination a.active{background:var(--primary);border-color:var(--primary);color:var(--dark)}
         
         @media (max-width:900px){
             .sidebar{transform:translateX(-100%);transition:.3s}

@@ -14,27 +14,27 @@ require __DIR__ . '/includes/header.php';
 <style>
 .price-grid{grid-template-columns:repeat(3,1fr);align-items:stretch}
 .price{display:flex;flex-direction:column;position:relative;overflow:visible}
-.price.featured{border:2px solid var(--gold-500);box-shadow:var(--shadow-md);transform:translateY(-10px)}
-.price .ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--gold-500);color:var(--navy-900);font-size:12.5px;font-weight:700;letter-spacing:.05em;padding:7px 18px;border-radius:50px;text-transform:uppercase}
-.price h3{font-size:20px;color:var(--navy-800);margin-bottom:6px}
+.price.featured{border:2px solid var(--primary);box-shadow:var(--shadow-md);transform:translateY(-10px)}
+.price .ribbon{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--primary);color:var(--dark);font-size:12.5px;font-weight:700;letter-spacing:.05em;padding:7px 18px;border-radius:50px;text-transform:uppercase}
+.price h3{font-size:20px;color:var(--dark);margin-bottom:6px}
 .price .desc{color:var(--gray-500);font-size:14px;margin-bottom:20px}
-.price .amount{font-family:'Playfair Display',serif;font-size:40px;font-weight:800;color:var(--navy-800);line-height:1}
+.price .amount{font-family:'Playfair Display',serif;font-size:40px;font-weight:800;color:var(--dark);line-height:1}
 .price .amount small{font-size:15px;color:var(--gray-500);font-weight:400;font-family:'Inter'}
 .price .per{color:var(--gray-500);font-size:13.5px;margin-bottom:24px}
 .price ul{margin-bottom:28px;flex:1}
 .price li{display:flex;gap:10px;align-items:flex-start;padding:9px 0;font-size:14.5px;color:var(--gray-700);border-bottom:1px solid var(--gray-100)}
-.price li svg{flex:0 0 18px;color:var(--gold-500);margin-top:2px}
+.price li svg{flex:0 0 18px;color:var(--primary);margin-top:2px}
 .price .btn{width:100%}
 .disc-grid{grid-template-columns:repeat(3,1fr)}
 .disc{display:flex;gap:16px;align-items:flex-start}
-.disc .n{font-family:'Playfair Display',serif;font-size:34px;font-weight:800;color:var(--gold-500);line-height:1}
-.disc h4{font-size:17px;color:var(--navy-800);margin-bottom:4px}
+.disc .n{font-family:'Playfair Display',serif;font-size:34px;font-weight:800;color:var(--primary);line-height:1}
+.disc h4{font-size:17px;color:var(--dark);margin-bottom:4px}
 .disc p{font-size:14px;color:var(--gray-500)}
 .faq{max-width:760px;margin:0 auto}
 .faq-item{background:#fff;border:1px solid var(--gray-100);border-radius:14px;margin-bottom:14px;overflow:hidden;box-shadow:var(--shadow-sm)}
-.faq-q{width:100%;text-align:left;background:none;border:none;padding:20px 24px;font-size:16px;font-weight:600;color:var(--navy-800);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:'Inter'}
-.faq-q span.ic{flex:0 0 24px;width:24px;height:24px;border-radius:50%;background:var(--cream);color:var(--gold-500);display:grid;place-items:center;transition:.3s;font-size:20px}
-.faq-item.open .faq-q span.ic{transform:rotate(45deg);background:var(--gold-500);color:#fff}
+.faq-q{width:100%;text-align:left;background:none;border:none;padding:20px 24px;font-size:16px;font-weight:600;color:var(--dark);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;font-family:'Inter'}
+.faq-q span.ic{flex:0 0 24px;width:24px;height:24px;border-radius:50%;background:var(--cream);color:var(--primary);display:grid;place-items:center;transition:.3s;font-size:20px}
+.faq-item.open .faq-q span.ic{transform:rotate(45deg);background:var(--primary);color:#fff}
 .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;color:var(--gray-600);font-size:14.5px}
 .faq-a div{padding:0 24px 20px}
 @media (max-width:992px){.price-grid,.disc-grid{grid-template-columns:1fr}.price.featured{transform:none}}

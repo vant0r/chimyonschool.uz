@@ -35,15 +35,15 @@ require __DIR__ . '/includes/header.php';
 .n-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .n-card:hover .ph img{transform:scale(1.07)}
 .n-body{padding:26px;display:flex;flex-direction:column;flex:1}
-.n-date{font-size:13px;color:var(--gold-500);font-weight:600;margin-bottom:10px}
-.n-body h3{font-size:19px;color:var(--navy-800);margin-bottom:10px;line-height:1.3}
+.n-date{font-size:13px;color:var(--primary);font-weight:600;margin-bottom:10px}
+.n-body h3{font-size:19px;color:var(--dark);margin-bottom:10px;line-height:1.3}
 .n-body p{color:var(--gray-500);font-size:14.5px;margin-bottom:18px;flex:1}
-.n-more{color:var(--navy-700);font-weight:600;font-size:14px;display:inline-flex;gap:6px;align-items:center;transition:gap .3s}
+.n-more{color:var(--secondary);font-weight:600;font-size:14px;display:inline-flex;gap:6px;align-items:center;transition:gap .3s}
 .n-card:hover .n-more{gap:12px}
 .pager{display:flex;justify-content:center;gap:8px;margin-top:52px}
-.pager a,.pager span{min-width:44px;height:44px;padding:0 12px;border-radius:11px;display:grid;place-items:center;font-weight:600;font-size:14.5px;border:1.5px solid var(--gray-300);color:var(--navy-700);transition:.25s}
-.pager a:hover{border-color:var(--navy-800);background:var(--navy-800);color:#fff}
-.pager .cur{background:var(--gold-500);border-color:var(--gold-500);color:var(--navy-900)}
+.pager a,.pager span{min-width:44px;height:44px;padding:0 12px;border-radius:11px;display:grid;place-items:center;font-weight:600;font-size:14.5px;border:1.5px solid var(--gray-300);color:var(--secondary);transition:.25s}
+.pager a:hover{border-color:var(--dark);background:var(--dark);color:#fff}
+.pager .cur{background:var(--primary);border-color:var(--primary);color:var(--dark)}
 @media (max-width:992px){.n-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.n-grid{grid-template-columns:1fr}}
 </style>

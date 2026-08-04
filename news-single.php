@@ -42,10 +42,10 @@ $active     = 'news';
 require __DIR__ . '/includes/header.php';
 ?>
 <style>
-.article-hero{position:relative;padding:calc(var(--nav-h) + 60px) 0 60px;background:linear-gradient(135deg,var(--navy-900),var(--navy-700));color:#fff}
+.article-hero{position:relative;padding:calc(var(--nav-h) + 60px) 0 60px;background:linear-gradient(135deg,var(--dark),var(--secondary));color:#fff}
 .article-hero::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 15%,rgba(212,175,55,.16),transparent 55%)}
 .article-hero .container{position:relative;z-index:2;max-width:820px}
-.article-hero .date{color:var(--gold-300);font-weight:600;font-size:14px;margin-bottom:14px;display:block}
+.article-hero .date{color:var(--accent);font-weight:600;font-size:14px;margin-bottom:14px;display:block}
 .article-hero h1{font-size:clamp(28px,4.5vw,46px);line-height:1.15;text-wrap:balance}
 .article-hero .crumbs{margin-top:18px}
 .article-wrap{max-width:820px;margin:0 auto}
@@ -53,21 +53,21 @@ require __DIR__ . '/includes/header.php';
 .article-cover img{width:100%;max-height:460px;object-fit:cover}
 .article-body{font-size:17px;line-height:1.8;color:var(--gray-700)}
 .article-body p{margin-bottom:20px}
-.article-body h2,.article-body h3{color:var(--navy-800);margin:28px 0 12px}
+.article-body h2,.article-body h3{color:var(--dark);margin:28px 0 12px}
 .article-body img{border-radius:12px;margin:20px 0}
-.article-lead{font-size:19px;color:var(--navy-700);font-weight:500;padding-left:20px;border-left:3px solid var(--gold-500);margin-bottom:28px}
+.article-lead{font-size:19px;color:var(--secondary);font-weight:500;padding-left:20px;border-left:3px solid var(--primary);margin-bottom:28px}
 .share{display:flex;align-items:center;gap:12px;margin:40px 0;padding-top:26px;border-top:1px solid var(--gray-100)}
-.share span{font-weight:600;color:var(--navy-800);font-size:14px}
-.share a{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:var(--cream);color:var(--navy-700);transition:.3s}
-.share a:hover{background:var(--gold-500);color:var(--navy-900);transform:translateY(-3px)}
+.share span{font-weight:600;color:var(--dark);font-size:14px}
+.share a{width:42px;height:42px;border-radius:11px;display:grid;place-items:center;background:var(--cream);color:var(--secondary);transition:.3s}
+.share a:hover{background:var(--primary);color:var(--dark);transform:translateY(-3px)}
 .rel-grid{grid-template-columns:repeat(3,1fr)}
 .rel-card{padding:0;overflow:hidden}
 .rel-card .ph{height:170px;overflow:hidden}
 .rel-card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
 .rel-card:hover .ph img{transform:scale(1.07)}
 .rel-body{padding:22px}
-.rel-body .d{font-size:12.5px;color:var(--gold-500);font-weight:600;margin-bottom:8px}
-.rel-body h4{font-size:16.5px;color:var(--navy-800);line-height:1.35}
+.rel-body .d{font-size:12.5px;color:var(--primary);font-weight:600;margin-bottom:8px}
+.rel-body h4{font-size:16.5px;color:var(--dark);line-height:1.35}
 @media (max-width:900px){.article-cover{margin-top:-60px}.rel-grid{grid-template-columns:1fr}}
 </style>
 
@@ -112,7 +112,7 @@ require __DIR__ . '/includes/header.php';
                 </a>
             </div>
 
-            <a href="news.php" class="n-more" style="color:var(--navy-700);font-weight:600;display:inline-flex;gap:8px;align-items:center">
+            <a href="news.php" class="n-more" style="color:var(--secondary);font-weight:600;display:inline-flex;gap:8px;align-items:center">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
                 Barcha yangiliklar
             </a>

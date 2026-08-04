@@ -26,11 +26,11 @@ require __DIR__ . '/includes/header.php';
 .t-card .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(6,21,48,.35),transparent 45%);opacity:0;transition:.4s}
 .t-card:hover .ph::after{opacity:1}
 .t-body{padding:24px 20px}
-.t-body h3{font-size:19px;color:var(--navy-800);margin-bottom:4px}
-.t-body .spec{color:var(--gold-500);font-size:14px;font-weight:600;margin-bottom:10px}
-.t-body .exp{display:inline-block;background:var(--cream);color:var(--navy-700);font-size:13px;font-weight:600;padding:5px 12px;border-radius:50px;margin-bottom:12px}
+.t-body h3{font-size:19px;color:var(--dark);margin-bottom:4px}
+.t-body .spec{color:var(--primary);font-size:14px;font-weight:600;margin-bottom:10px}
+.t-body .exp{display:inline-block;background:var(--cream);color:var(--secondary);font-size:13px;font-weight:600;padding:5px 12px;border-radius:50px;margin-bottom:12px}
 .t-body p{color:var(--gray-500);font-size:14px}
-.join{background:linear-gradient(135deg,var(--navy-900),var(--navy-700));border-radius:var(--radius);padding:52px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.join{background:linear-gradient(135deg,var(--dark),var(--secondary));border-radius:var(--radius);padding:52px;text-align:center;color:#fff;position:relative;overflow:hidden}
 .join::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 0%,rgba(212,175,55,.2),transparent 55%)}
 .join>*{position:relative;z-index:2}
 .join h2{font-size:clamp(24px,3.5vw,36px);margin-bottom:12px}

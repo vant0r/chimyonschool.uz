@@ -27,22 +27,22 @@ require __DIR__ . '/includes/header.php';
 <main id="main-content" role="main">
 
 <!-- ======================= HERO SECTION ======================= -->
-<section class="hero-section" style="position:relative;overflow:hidden;background:linear-gradient(135deg,var(--navy-900),var(--navy-700));min-height:100vh;display:flex;align-items:center;padding-top:var(--nav-h);">
+<section class="hero-section" style="position:relative;overflow:hidden;background:linear-gradient(135deg,var(--dark),var(--secondary));min-height:100vh;display:flex;align-items:center;padding-top:var(--nav-h);">
     <!-- Ambient Background Glow -->
     <div style="position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(212,175,55,0.15),transparent 70%);border-radius:50%;filter:blur(60px);animation:pulse-glow 8s ease-in-out infinite;"></div>
     <div style="position:absolute;bottom:-10%;left:-5%;width:500px;height:500px;background:radial-gradient(circle,rgba(64,129,117,0.2),transparent 70%);border-radius:50%;filter:blur(60px);animation:pulse-glow 10s ease-in-out infinite reverse;"></div>
     
     <div class="container" style="position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
         <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-            <span class="eyebrow" style="color:var(--gold-300);margin-bottom:24px;display:inline-block;">Xususiy maktab №1</span>
+            <span class="eyebrow" style="color:var(--accent);margin-bottom:24px;display:inline-block;">Xususiy maktab №1</span>
             <h1 class="section-title" style="font-size:clamp(40px,6vw,72px);color:#fff;line-height:1.1;margin-bottom:24px;text-wrap:balance;">
-                Kelajakni bugundan <span style="color:var(--gold-400);">boshlang</span>
+                Kelajakni bugundan <span style="color:var(--accent);">boshlang</span>
             </h1>
             <p style="font-size:18px;color:rgba(255,255,255,0.85);max-width:540px;margin-bottom:40px;line-height:1.7;text-wrap:pretty;">
                 Chimyon School — zamonaviy texnologiyalar, tajribali o'qituvchilar va individual yondashuv bilan farzandingizning potensialini maksimal darajada ochib beramiz.
             </p>
             <div style="display:flex;gap:16px;flex-wrap:wrap;">
-                <a href="admission.php" class="btn btn-primary btn-lg btn-magnetic" style="background:var(--gold-500);color:var(--navy-900);">
+                <a href="admission.php" class="btn btn-primary btn-lg btn-magnetic" style="background:var(--primary);color:var(--dark);">
                     Ariza qoldirish
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
@@ -75,7 +75,7 @@ require __DIR__ . '/includes/header.php';
                 <!-- Glass Overlay Card -->
                 <div style="position:absolute;bottom:24px;left:24px;right:24px;background:rgba(255,255,255,0.15);backdrop-filter:blur(20px);padding:20px;border-radius:16px;border:1px solid rgba(255,255,255,0.2);">
                     <div style="display:flex;align-items:center;gap:12px;">
-                        <div style="width:48px;height:48px;border-radius:50%;background:var(--gold-500);display:grid;place-items:center;color:var(--navy-900);font-weight:700;font-family:'Playfair Display',serif;font-size:20px;">C</div>
+                        <div style="width:48px;height:48px;border-radius:50%;background:var(--primary);display:grid;place-items:center;color:var(--dark);font-weight:700;font-family:'Playfair Display',serif;font-size:20px;">C</div>
                         <div>
                             <div style="color:#fff;font-weight:600;font-size:15px;">Chimyon School</div>
                             <div style="color:rgba(255,255,255,0.7);font-size:13px;">Premium ta'lim muassasasi</div>
@@ -84,7 +84,7 @@ require __DIR__ . '/includes/header.php';
                 </div>
             </div>
             <!-- Decorative Elements -->
-            <div style="position:absolute;-top:20px;-right:20px;width:120px;height:120px;background:var(--gold-500);border-radius:24px;opacity:0.2;filter:blur(20px);"></div>
+            <div style="position:absolute;-top:20px;-right:20px;width:120px;height:120px;background:var(--primary);border-radius:24px;opacity:0.2;filter:blur(20px);"></div>
             <div style="position:absolute;-bottom:10px;-left:10px;width:80px;height:80px;background:var(--primary);border-radius:50%;opacity:0.3;filter:blur(15px);"></div>
         </div>
     </div>
@@ -233,7 +233,7 @@ require __DIR__ . '/includes/header.php';
             Qabul jarayoni boshlandi. Hoziroq ariza topshiring va Chimyon School oilasiga qo'shiling.
         </p>
         <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-            <a href="admission.php" class="btn btn-lg" style="background:var(--gold-500);color:var(--navy-900);">Ariza qoldirish</a>
+            <a href="admission.php" class="btn btn-lg" style="background:var(--primary);color:var(--dark);">Ariza qoldirish</a>
             <a href="contact.php" class="btn btn-lg" style="background:rgba(255,255,255,0.15);color:#fff;border:1.5px solid rgba(255,255,255,0.3);">Bog'lanish</a>
         </div>
     </div>

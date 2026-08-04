@@ -13,23 +13,23 @@ require __DIR__ . '/includes/header.php';
 ?>
 <style>
 .stage{display:grid;grid-template-columns:.5fr 1.5fr;gap:0;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);border:1px solid var(--gray-100);margin-bottom:26px;background:#fff}
-.stage .side{background:linear-gradient(135deg,var(--navy-800),var(--navy-600));color:#fff;padding:38px;display:flex;flex-direction:column;justify-content:center}
-.stage .side .num{font-family:'Playfair Display',serif;font-size:46px;font-weight:800;color:var(--gold-400);line-height:1}
+.stage .side{background:linear-gradient(135deg,var(--dark),var(--secondary));color:#fff;padding:38px;display:flex;flex-direction:column;justify-content:center}
+.stage .side .num{font-family:'Playfair Display',serif;font-size:46px;font-weight:800;color:var(--accent);line-height:1}
 .stage .side h3{font-size:22px;margin-top:8px}
-.stage .side .cls{color:var(--gold-300);font-size:14px;margin-top:6px;font-weight:600}
+.stage .side .cls{color:var(--accent);font-size:14px;margin-top:6px;font-weight:600}
 .stage .body{padding:38px}
 .stage .body p{color:var(--gray-700);margin-bottom:18px}
 .subj{display:flex;flex-wrap:wrap;gap:10px}
-.subj span{background:var(--gray-50);border:1px solid var(--gray-100);color:var(--navy-700);font-size:13.5px;font-weight:500;padding:8px 14px;border-radius:50px}
+.subj span{background:var(--gray-50);border:1px solid var(--gray-100);color:var(--secondary);font-size:13.5px;font-weight:500;padding:8px 14px;border-radius:50px}
 .clubs-grid{grid-template-columns:repeat(3,1fr)}
 .club{display:flex;gap:16px;align-items:flex-start}
-.club .ico{flex:0 0 50px;width:50px;height:50px;border-radius:12px;display:grid;place-items:center;background:var(--cream);color:var(--gold-500)}
-.club h4{font-size:17px;color:var(--navy-800);margin-bottom:4px}
+.club .ico{flex:0 0 50px;width:50px;height:50px;border-radius:12px;display:grid;place-items:center;background:var(--cream);color:var(--primary)}
+.club h4{font-size:17px;color:var(--dark);margin-bottom:4px}
 .club p{font-size:14px;color:var(--gray-500)}
 .day-grid{grid-template-columns:repeat(2,1fr);gap:16px}
 .day{display:flex;gap:18px;align-items:center;background:#fff;border-radius:14px;padding:18px 22px;box-shadow:var(--shadow-sm);border:1px solid var(--gray-100)}
-.day .time{font-family:'Playfair Display',serif;font-weight:700;color:var(--gold-500);font-size:17px;flex:0 0 96px}
-.day b{color:var(--navy-800);display:block;font-family:'Inter'}
+.day .time{font-family:'Playfair Display',serif;font-weight:700;color:var(--primary);font-size:17px;flex:0 0 96px}
+.day b{color:var(--dark);display:block;font-family:'Inter'}
 .day span{color:var(--gray-500);font-size:14px}
 @media (max-width:900px){.stage{grid-template-columns:1fr}.clubs-grid,.day-grid{grid-template-columns:1fr}}
 </style>

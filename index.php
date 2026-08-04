@@ -2,7 +2,7 @@
 /**
  * =====================================================================
  * CHIMYON SCHOOL — BOSH SAHIFA (index.php)
- * Premium Design v2.0 - Apple/Stripe Style
+ * Premium Design v3.0 - Apple/Stripe Style
  * =====================================================================
  */
 require_once __DIR__ . '/config/config.php';
@@ -27,96 +27,77 @@ require __DIR__ . '/includes/header.php';
 <main id="main-content" role="main">
 
 <!-- ======================= HERO SECTION ======================= -->
-<section class="hero-section" style="position:relative;overflow:hidden;background:linear-gradient(135deg,var(--dark),var(--secondary));min-height:100vh;display:flex;align-items:center;padding-top:var(--nav-h);">
+<section class="hero-section">
     <!-- Ambient Background Glow -->
-    <div style="position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(212,175,55,0.15),transparent 70%);border-radius:50%;filter:blur(60px);animation:pulse-glow 8s ease-in-out infinite;"></div>
-    <div style="position:absolute;bottom:-10%;left:-5%;width:500px;height:500px;background:radial-gradient(circle,rgba(64,129,117,0.2),transparent 70%);border-radius:50%;filter:blur(60px);animation:pulse-glow 10s ease-in-out infinite reverse;"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
     
-    <div class="container" style="position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;">
-        <div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-out-cubic">
-            <span class="eyebrow" style="color:var(--accent);margin-bottom:24px;display:inline-block;">Xususiy maktab №1</span>
-            <h1 class="section-title" style="font-size:clamp(40px,6vw,72px);color:#fff;line-height:1.1;margin-bottom:24px;text-wrap:balance;">
-                Kelajakni bugundan <span style="color:var(--accent);">boshlang</span>
+    <div class="container hero-container">
+        <div class="hero-content">
+            <span class="eyebrow reveal-up">Xususiy maktab №1</span>
+            <h1 class="hero-title reveal-up delay-1">
+                Kelajakni bugundan <span class="text-accent">boshlang</span>
             </h1>
-            <p style="font-size:18px;color:rgba(255,255,255,0.85);max-width:540px;margin-bottom:40px;line-height:1.7;text-wrap:pretty;">
+            <p class="hero-description reveal-up delay-2">
                 Chimyon School — zamonaviy texnologiyalar, tajribali o'qituvchilar va individual yondashuv bilan farzandingizning potensialini maksimal darajada ochib beramiz.
             </p>
-            <div style="display:flex;gap:16px;flex-wrap:wrap;">
-                <a href="admission.php" class="btn btn-primary btn-lg btn-magnetic" style="background:var(--primary);color:var(--dark);">
+            <div class="hero-cta reveal-up delay-3">
+                <a href="admission.php" class="btn btn-primary btn-lg btn-magnetic">
                     Ariza qoldirish
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
                 </a>
-                <a href="#about-preview" class="btn btn-secondary btn-lg" style="border-color:rgba(255,255,255,0.3);color:#fff;">
+                <a href="#about-preview" class="btn btn-secondary btn-lg">
                     Batafsil ma'lumot
                 </a>
             </div>
             
             <!-- Stats Row -->
-            <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:64px;padding-top:40px;border-top:1px solid rgba(255,255,255,0.1);">
-                <div>
-                    <div class="counter" data-target="15" style="font-size:36px;font-weight:700;color:#fff;font-family:'Playfair Display',serif;">0</div>
-                    <div style="font-size:14px;color:rgba(255,255,255,0.6);margin-top:4px;">Yillik tajriba</div>
+            <div class="hero-stats reveal-up delay-4">
+                <div class="stat-item">
+                    <div class="counter" data-target="15">0</div>
+                    <div class="stat-label">Yillik tajriba</div>
                 </div>
-                <div>
-                    <div class="counter" data-target="500" style="font-size:36px;font-weight:700;color:#fff;font-family:'Playfair Display',serif;">0</div>
-                    <div style="font-size:14px;color:rgba(255,255,255,0.6);margin-top:4px;">O'quvchilar</div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="counter" data-target="500">0</div>
+                    <div class="stat-label">O'quvchilar</div>
                 </div>
-                <div>
-                    <div class="counter" data-target="100" data-suffix="%" style="font-size:36px;font-weight:700;color:#fff;font-family:'Playfair Display',serif;">0</div>
-                    <div style="font-size:14px;color:rgba(255,255,255,0.6);margin-top:4px;">Qabul foizi</div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="counter" data-target="100" data-suffix="%">0</div>
+                    <div class="stat-label">Qabul foizi</div>
                 </div>
             </div>
         </div>
         
         <!-- Hero Image -->
-        <div data-aos="fade-left" data-aos-duration="1200" data-aos-delay="200" data-aos-easing="ease-out-cubic" style="position:relative;">
-            <div style="position:relative;border-radius:24px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,0.3);">
-                <img src="https://placehold.co/600x700/17433F/A1BC98?text=Chimyon+Students" alt="Chimyon School o'quvchilari" loading="eager" style="width:100%;height:auto;display:block;">
+        <div class="hero-visual reveal-scale delay-5">
+            <div class="hero-image-wrapper">
+                <img src="https://placehold.co/600x700/17433F/A1BC98?text=Chimyon+Students" alt="Chimyon School o'quvchilari" loading="eager" class="hero-image">
                 <!-- Glass Overlay Card -->
-                <div style="position:absolute;bottom:24px;left:24px;right:24px;background:rgba(255,255,255,0.15);backdrop-filter:blur(20px);padding:20px;border-radius:16px;border:1px solid rgba(255,255,255,0.2);">
-                    <div style="display:flex;align-items:center;gap:12px;">
-                        <div style="width:48px;height:48px;border-radius:50%;background:var(--primary);display:grid;place-items:center;color:var(--dark);font-weight:700;font-family:'Playfair Display',serif;font-size:20px;">C</div>
-                        <div>
-                            <div style="color:#fff;font-weight:600;font-size:15px;">Chimyon School</div>
-                            <div style="color:rgba(255,255,255,0.7);font-size:13px;">Premium ta'lim muassasasi</div>
+                <div class="hero-glass-card">
+                    <div class="glass-card-content">
+                        <div class="glass-card-icon">C</div>
+                        <div class="glass-card-text">
+                            <div class="glass-card-title">Chimyon School</div>
+                            <div class="glass-card-subtitle">Premium ta'lim muassasasi</div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Decorative Elements -->
-            <div style="position:absolute;-top:20px;-right:20px;width:120px;height:120px;background:var(--primary);border-radius:24px;opacity:0.2;filter:blur(20px);"></div>
-            <div style="position:absolute;-bottom:10px;-left:10px;width:80px;height:80px;background:var(--primary);border-radius:50%;opacity:0.3;filter:blur(15px);"></div>
+            <div class="hero-decor hero-decor-1"></div>
+            <div class="hero-decor hero-decor-2"></div>
         </div>
     </div>
     
     <!-- Scroll Indicator -->
-    <div style="position:absolute;bottom:40px;left:50%;transform:translateX(-50%);animation:bounce 2s infinite;">
-        <div style="width:24px;height:40px;border:2px solid rgba(255,255,255,0.3);border-radius:20px;display:grid;place-items:start;padding-top:8px;">
-            <div style="width:4px;height:8px;background:rgba(255,255,255,0.6);border-radius:2px;animation:scroll-down 1.5s infinite;"></div>
+    <div class="scroll-indicator reveal-up delay-6">
+        <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
         </div>
     </div>
 </section>
-
-<style>
-@keyframes pulse-glow {
-    0%, 100% { transform: scale(1); opacity: 0.5; }
-    50% { transform: scale(1.1); opacity: 0.8; }
-}
-@keyframes bounce {
-    0%, 100% { transform: translateX(-50%) translateY(0); }
-    50% { transform: translateX(-50%) translateY(10px); }
-}
-@keyframes scroll-down {
-    0% { opacity: 1; transform: translateY(0); }
-    100% { opacity: 0; transform: translateY(12px); }
-}
-@media (max-width: 992px) {
-    .hero-section .container { grid-template-columns: 1fr !important; gap: 40px !important; text-align: center; }
-    .hero-section .container > div:first-child { order: 2; }
-    .hero-section .container > div:last-child { order: 1; }
-    .hero-section .stats-row { justify-content: center; }
-}
-</style>
 
 <!-- ======================= ABOUT PREVIEW ======================= -->
 <section id="about-preview" class="section-padding" style="background:var(--color-bg-body);">
